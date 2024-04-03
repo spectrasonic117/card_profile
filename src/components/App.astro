@@ -1,0 +1,47 @@
+---
+import Button from './buttons/button.astro';
+import jsontext from './texts.json';
+---
+
+<section
+	class='bg-primarybg h-screen w-screen flex justify-center items-center text-black'>
+	<div
+		class='bg-slate-100 w-[400px] h-[650px] rounded-3xl overflow-hidden grid grid-rows-3 shadow-2xl'>
+		<article class='p-10 row-span-2'>
+			<p class='text-primarybg'>
+				{jsontext.role}
+			</p>
+			<h1 class='text-4xl font-bold text-pretty my-3'>
+				{jsontext.name}
+			</h1>
+
+			<p class='text-balance my-6 font-extralight'>
+				{jsontext.description}
+			</p>
+			<div class='flex gap-3'>
+				<Button
+					red='/twitter.svg'
+					alt='Twiter image'
+					link={jsontext.twitter}
+				/>
+				<Button
+					red='/twitch.svg'
+					alt='Twitch Image'
+					link={jsontext.twitch}
+				/>
+				<Button
+					red='/github.svg'
+					alt='Github Image'
+					link={jsontext.github}
+				/>
+			</div>
+		</article>
+		<article class='row-span-1'>
+			<img
+				src={jsontext.image}
+				alt='reference image'
+				class='w-full h-full object-cover'
+			/>
+		</article>
+	</div>
+</section>
