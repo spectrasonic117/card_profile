@@ -2,8 +2,10 @@ import { defineConfig } from 'astro/config';
 
 import tailwind from '@astrojs/tailwind';
 
-// https://astro.build/config
+const LIVE_URL = 'https://spectrasonic117.github.io';
+const BASE = './dist';
 export default defineConfig({
 	integrations: [tailwind()],
-	site: 'https://spectrasonic117.github.io'
+	site: LIVE_URL,
+	base: BASE
 });
