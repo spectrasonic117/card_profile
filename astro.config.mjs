@@ -5,6 +5,5 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
 	integrations: [tailwind()],
-	site: 'https://spectrasonic117.github.io',
-	base: 'base_card'
+	site: 'https://spectrasonic117.github.io'
 });
