@@ -1,5 +1,4 @@
 ---
-import jsontext from '../texts.json';
 interface Props {
 	red: string;
 	alt: string;
@@ -12,6 +11,6 @@ const { red, alt, link } = Astro.props;
 <a
 	href={link}
 	target='_blank'
-	class='rounded-full bg-primarybg w-14 h-14 hover:cursor-pointer flex justify-center items-center stroke-secondarybg'>
-	<img src={red} alt={alt} />
+	class='shadow-sm rounded-full hover:bg-slate-800 duration-200 transition-all bg-primarybg w-12 h-12 hover:cursor-pointer flex justify-center items-center'>
+	<img class='w-7 fill-amber-50' src={red} alt={alt} />
 </a>

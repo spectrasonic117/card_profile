@@ -1,43 +1,44 @@
 ---
-import Button from './buttons/button.astro';
-import jsontext from './texts.json';
+import Button from '@components/buttons/button.astro';
+import jsontext from './app_texts.json';
 ---
 
 <section
-	class='bg-primarybg h-screen w-screen flex justify-center items-center text-black'>
+	class='bg-gradient-to-t from-primarybg to-white h-screen w-screen flex justify-center items-center text-black'>
 	<div
-		class='bg-slate-100 w-[400px] h-[650px] rounded-3xl overflow-hidden grid grid-rows-3 shadow-2xl'>
+		class='bg-slate-50 w-[380px] h-[550px] rounded-3xl overflow-hidden grid grid-rows-3 shadow-2xl'>
 		<article class='p-10 row-span-2'>
 			<p class='text-primarybg'>
 				{jsontext.role}
 			</p>
-			<h1 class='text-4xl font-bold text-pretty my-3'>
+			<h1 class='text-4xl font-bold text-balance my-6'>
 				{jsontext.name}
 			</h1>
 
-			<p class='text-balance my-6 font-extralight'>
+			<p class='text-pretty my-10 font-extralight'>
 				{jsontext.description}
 			</p>
-			<div class='flex gap-3'>
+			<div class='flex gap-4'>
 				<Button
-					red='/twitter.svg'
+					red='/svg/twitter.svg'
 					alt='Twiter image'
-					link={jsontext.twitter}
+					link={jsontext.twitter_link}
 				/>
 				<Button
-					red='/twitch.svg'
+					red='/svg/twitch.svg'
 					alt='Twitch Image'
-					link={jsontext.twitch}
+					link={jsontext.twitch_link}
 				/>
 				<Button
-					red='/github.svg'
+					red='/svg/github.svg'
 					alt='Github Image'
-					link={jsontext.github}
+					link={jsontext.github_link}
 				/>
 			</div>
 		</article>
 		<article class='row-span-1'>
 			<img
+				draggable='false'
 				src={jsontext.image}
 				alt='reference image'
 				class='w-full h-full object-cover'

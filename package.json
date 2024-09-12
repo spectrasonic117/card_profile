@@ -1,30 +1,30 @@
 {
-  "name": "card_profile",
-  "type": "module",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "astro dev --open",
-    "start": "astro dev --open",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/check": "latest",
-    "@astrojs/tailwind": "^5.1.0",
-    "astro": "latest",
-    "tailwindcss": "^3.4.3",
-    "typescript": "latest"
-  },
-  "devDependencies": {
-    "@typescript-eslint/parser": "latest",
-    "css.normalizer": "latest",
-    "eslint": "latest",
-    "eslint-plugin-astro": "latest",
-    "eslint-plugin-jsx-a11y": "latest",
-    "prettier": "latest",
-    "prettier-config-standard": "latest",
-    "prettier-plugin-astro": "latest",
-    "sass": "latest"
-  }
+	"name": "card_profile",
+	"type": "module",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "astro dev --open",
+		"start": "astro dev --open",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/check": "latest",
+		"@astrojs/tailwind": "latest",
+		"astro": "latest",
+		"tailwindcss": "latest",
+		"typescript": "latest"
+	},
+	"devDependencies": {
+		"@typescript-eslint/parser": "latest",
+		"css.normalizer": "latest",
+		"eslint": "latest",
+		"eslint-plugin-astro": "latest",
+		"eslint-plugin-jsx-a11y": "latest",
+		"prettier": "latest",
+		"prettier-config-standard": "latest",
+		"prettier-plugin-astro": "latest",
+		"sass": "latest"
+	}
 }
